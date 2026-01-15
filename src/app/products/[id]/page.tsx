@@ -11,7 +11,11 @@ const products = [
   { id: 2, name: 'แล็ปท็อป MacBook Air M3', price: 42900, description: 'แล็ปท็อปบางเบาพร้อมชิป M3 ประสิทธิภาพสูงและแบตเตอรี่ใช้งานได้ยาวนาน', image: '/products/macbook-air.jpg'},
   { id: 3, name: 'หูฟังไร้สาย AirPods Pro', price: 8990, description: 'หูฟังระดับพรีเมียมพร้อม Active Noise Cancellation และ Spatial Audio', image: '/products/airpods-pro.jpg' },
   { id: 4, name: 'แท็บเล็ต iPad Air', price: 21900, description: 'แท็บเล็ตอเนกประสงค์พร้อมชิป M2 และจอ Liquid Retina ขนาด 11 นิ้ว', image: '/products/ipad-air.jpg' },
+{ id: 5, name: 'โทรศัพท์มือถือ iPhone 15 Pro', price: 41900, category: 'wearable', image: '/products/iphone15-pro.jpg' },
+  { id: 6, name: 'หูฟัง Sony WH-1000XM3', price: 7990, category: 'audio', image: '/products/sony-wh1000xm3.jpg' },
 ]
+
+
 
 function getProductById(id: string) {
   return products.find(p => p.id === parseInt(id))

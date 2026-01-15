@@ -12,6 +12,8 @@ const products = [
   { id: 2, name: 'แล็ปท็อป MacBook Air M3', price: 42900, category: 'laptop', image: '/products/macbook-air.jpg' },
   { id: 3, name: 'หูฟังไร้สาย AirPods Pro', price: 8990, category: 'audio', image: '/products/airpods-pro.jpg' },
   { id: 4, name: 'แท็บเล็ต iPad Air', price: 21900, category: 'tablet', image: '/products/ipad-air.jpg' },
+  { id: 5, name: 'โทรศัพท์มือถือ iPhone 15 Pro', price: 41900, category: 'wearable', image: '/products/iphone15-pro.jpg' },
+  { id: 6, name: 'หูฟัง Sony WH-1000XM3', price: 7990, category: 'audio', image: '/products/sony-wh1000xm3.jpg' },
 ]
 
 export default async function ProductsPage({ searchParams }: ProductsPageProps) {
