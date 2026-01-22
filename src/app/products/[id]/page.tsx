@@ -8,10 +8,10 @@ interface ProductDetailPageProps {
 // ข้อมูลสินค้า (จำลอง) - ตรวจสอบนามสกุลไฟล์ให้ถูกต้อง
 const products = [
   { id: 1, name: 'โทรศัพท์มือถือ Samsung Galaxy S24', price: 25900, description: 'สมาร์ทโฟนรุ่นล่าสุดพร้อมกล้อง AI และหน้าจอ Dynamic AMOLED 2X', image: '/products/galaxy-s24.jpg' },
-  { id: 2, name: 'แล็ปท็อป MacBook Air M3', price: 42900, description: 'แล็ปท็อปบางเบาพร้อมชิป M3 ประสิทธิภาพสูงและแบตเตอรี่ใช้งานได้ยาวนาน', image: '/products/macbook-air.jpg'},
+  { id: 2, name: 'แล็ปท็อป MacBook Air M3', price: 42900, description: 'แล็ปท็อปบางเบาพร้อมชิป M3 ประสิทธิภาพสูงและแบตเตอรี่ใช้งานได้ยาวนาน', image: '/products/macbook-air.jpg' },
   { id: 3, name: 'หูฟังไร้สาย AirPods Pro', price: 8990, description: 'หูฟังระดับพรีเมียมพร้อม Active Noise Cancellation และ Spatial Audio', image: '/products/airpods-pro.jpg' },
   { id: 4, name: 'แท็บเล็ต iPad Air', price: 21900, description: 'แท็บเล็ตอเนกประสงค์พร้อมชิป M2 และจอ Liquid Retina ขนาด 11 นิ้ว', image: '/products/ipad-air.jpg' },
-{ id: 5, name: 'โทรศัพท์มือถือ iPhone 15 Pro', price: 41900, category: 'wearable', image: '/products/iphone15-pro.jpg' },
+  { id: 5, name: 'โทรศัพท์มือถือ iPhone 15 Pro', price: 41900, category: 'wearable', image: '/products/iphone15-pro.jpg' },
   { id: 6, name: 'หูฟัง Sony WH-1000XM3', price: 7990, category: 'audio', image: '/products/sony-wh1000xm3.jpg' },
 ]
 
@@ -25,7 +25,7 @@ function getProductById(id: string) {
 export async function generateMetadata({ params }: ProductDetailPageProps): Promise<Metadata> {
   const { id } = await params
   const product = getProductById(id)
-  
+
   if (!product) return { title: 'ไม่พบสินค้า' }
 
   return {

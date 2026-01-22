@@ -1,10 +1,14 @@
 import Link from 'next/link'
 import Image from 'next/image';
+import { Metadata } from "next"
 
 interface ProductsPageProps {
   searchParams: Promise<{
     search?: string
   }>
+}
+export const metadata: Metadata = {
+  title: 'รายการสินค้า'
 }
 
 const products = [
@@ -24,7 +28,7 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
     : products
 
   return (
-    <main className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8 max-w-7xl">
       <h1 className="text-3xl font-bold mb-6">รายการสินค้า</h1>
       
       {/* --- ส่วนช่องค้นหาแบบเดิม (คงฟังก์ชันเดิมแต่แต่งด้วย Tailwind) --- */}
