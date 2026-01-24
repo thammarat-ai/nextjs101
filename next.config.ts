@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com', // อนุญาตเฉพาะ Unsplash
+        hostname: 'backend.codingthailand.com', // อนุญาตเฉพาะ Unsplash
         port: '',
         pathname: '/**', // อนุญาตทุก Path ภายใต้ Hostname นี้
       },
@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.your-store.com',
         port: '',
         pathname: '/products/**', // อนุญาตเฉพาะรูปในโฟลเดอร์ products
+      },
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos', // ตัว Domain หลัก
+        port: '',                  // เว้นว่างไว้สำหรับพอร์ตมาตรฐาน (80/443)
+        pathname: '/**',           // อนุญาตทุกเส้นทาง (Path) ภายใต้ Domain นี้
       },
     ],
   },
