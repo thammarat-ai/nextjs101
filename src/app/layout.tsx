@@ -52,6 +52,7 @@ export default function RootLayout({
               <nav className="flex flex-1 items-center space-x-6 text-sm font-medium">
                 <Link href="/" className="text-slate-600 hover:text-slate-900">หน้าหลัก</Link>
                 <Link href="/about" className="text-slate-600 hover:text-slate-900">เกี่ยวกับเรา</Link>
+                <Link href="/orders" className="text-slate-600 hover:text-slate-900">คำสั่งซื้อ</Link>
                 <Link href="/products" className="text-slate-600 hover:text-slate-900">สินค้า</Link>
               </nav>
             </div>
