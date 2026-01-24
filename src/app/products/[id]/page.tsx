@@ -1,4 +1,4 @@
-import AddToCartButton from "@/app/components/add-to-cart-button"
+import AddToCartButton from "@/components/add-to-cart-button"
 import { Metadata } from "next"
 import Image from "next/image"
 

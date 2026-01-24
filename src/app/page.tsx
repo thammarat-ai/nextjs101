@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import Link from 'next/link';
-import Counter from '@/app/components/counter' // นำเข้า Counter component
+import Counter from '@/components/counter' // นำเข้า Counter component
 
 
 export default function Home() {

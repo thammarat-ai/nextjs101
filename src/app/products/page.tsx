@@ -2,7 +2,7 @@
 import Link from 'next/link' // สำหรับการนำทางระหว่างหน้า
 import Image from 'next/image'; // Component รูปภาพที่ปรับขนาดอัตโนมัติ
 import { Metadata } from "next" // Type สำหรับ SEO metadata
-import ProductSearch from '@/app/components/product-search' // นำเข้า Client Component สำหรับค้นหา
+import ProductSearch from '@/components/product-search' // นำเข้า Client Component สำหรับค้นหา
 
 // Static Metadata สำหรับหน้ารายการสินค้า
 export const metadata: Metadata = {
