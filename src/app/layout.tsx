@@ -55,6 +55,7 @@ export default function RootLayout({
                 <Link href="/orders" className="text-slate-600 hover:text-slate-900">คำสั่งซื้อ</Link>
                 <Link href="/products" className="text-slate-600 hover:text-slate-900">สินค้า</Link>
                 <Link href="/cache-demo" className="text-slate-600 hover:text-slate-900">Cache Demo</Link>
+                <Link href="/users" className="text-slate-600 hover:text-slate-900">Users Management</Link>
               </nav>
             </div>
           </header>
