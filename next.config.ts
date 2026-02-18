@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* การตั้งค่าประสิทธิภาพอื่นๆ */
+  output: "standalone",
   reactCompiler: true,
   cacheComponents: true,
   images: {
